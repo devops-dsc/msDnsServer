@@ -1,4 +1,4 @@
-﻿$Properties = @{
+$Properties = @{
                 Name      = New-xDscResourceProperty -Name Name -Type String -Attribute Key `
                                                      -Description 'Name of the secondary zone'
                 Type = New-xDscResourceProperty -Name Type -Type String -Attribute Required -ValidateSet 'Any', 'Named', 'Specific' `
@@ -9,4 +9,4 @@
                                                      -Description 'Should this resource be present or absent'
                 
             }
-New-xDscResource -Name MSFT_xDnsServerZoneTransfer -Property $Properties.Values -Path . -ModuleName xDnsServer -FriendlyName xDnsServerZoneTransfer -Force
+New-xDscResource -Name MSFT_msDnsServerZoneTransfer -Property $Properties.Values -Path . -ModuleName xDnsServer -FriendlyName msDnsServerZoneTransfer -Force
