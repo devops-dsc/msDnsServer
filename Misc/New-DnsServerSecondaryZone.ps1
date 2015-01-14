@@ -7,4 +7,4 @@ $Properties = @{
                                                      -Description 'Should this resource be present or absent'
                 
             }
-New-xDscResource -Name MSFT_msDnsServerSecondaryZone -Property $Properties.Values -Path . -ModuleName xDnsServer -FriendlyName msDnsServerSecondaryZone -Force
+New-xDscResource -Name MSFT_msDnsServerSecondaryZone -Property $Properties.Values -Path . -ModuleName msDnsServer -FriendlyName msDnsServerSecondaryZone -Force
