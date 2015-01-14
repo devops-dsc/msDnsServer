@@ -9,4 +9,4 @@ $Properties = @{
                                                      -Description 'Should this resource be present or absent'
                 
             }
-New-xDscResource -Name MSFT_msDnsServerZoneTransfer -Property $Properties.Values -Path . -ModuleName xDnsServer -FriendlyName msDnsServerZoneTransfer -Force
+New-xDscResource -Name MSFT_msDnsServerZoneTransfer -Property $Properties.Values -Path . -ModuleName msDnsServer -FriendlyName msDnsServerZoneTransfer -Force
